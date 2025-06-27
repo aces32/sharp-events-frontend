@@ -157,7 +157,6 @@ const VendorServiceListingTable = () => {
           pageSize: itemsPerPage.toString(),
         }).toString();
         const response = await getServiceOffered.GetPayload(queryString);
-        console.log(response);
         setServiceOffered(response.data);
         setTotalPages(Math.ceil(response.pagination.total / itemsPerPage));
       } catch (error) {

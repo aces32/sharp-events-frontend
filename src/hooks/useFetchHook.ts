@@ -37,7 +37,7 @@ const useFetchHook = (Url: string) => {
     if (payload instanceof FormData) {
       config = {
         headers: {
-          'Content-Type': 'undefined',
+          'Content-Type': 'multipart/form-data',
         },
       };
     }
@@ -64,7 +64,7 @@ const useFetchHook = (Url: string) => {
     if (payload instanceof FormData) {
       config = {
         headers: {
-          'Content-Type': 'undefined',
+          'Content-Type': 'multipart/form-data',
         },
       };
     }

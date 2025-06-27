@@ -46,9 +46,7 @@ const CreateVendorStaffAccount = ({ setUserTab, setEmail }: Props) => {
     if (vendorId) setValue('vendorId', vendorId);
   }, [searchParams, setValue]);
   const onSubmit = async (val: any) => {
-    console.log(val);
     const vendorId = searchParams.get('vendorId');
-    console.log(vendorId);
     const encryptedPassword = encrypt(val.password);
     // const email = searchParams.get('email');
     const response = await postCreateVendorStaff.Post({
@@ -59,7 +57,6 @@ const CreateVendorStaffAccount = ({ setUserTab, setEmail }: Props) => {
       lastName: val.lastName,
       password: encryptedPassword,
     });
-    console.log(response);
     if (response?.code === '00') {
       toast.success(response.message);
       setUserTab('verify');

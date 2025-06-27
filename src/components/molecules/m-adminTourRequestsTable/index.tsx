@@ -222,12 +222,9 @@ const AdminTourRequestTable = () => {
           pageSize: itemsPerPage.toString(),
           eventCenterId: id,
         }).toString();
-        console.log('Query String:', queryString);
         const response = await GetTourRequest.GetPayload(queryString);
-        console.log('API Response:', response);
         setTotalPages(Math.ceil(response.data.total / itemsPerPage));
       } catch (error) {
-        console.log(error);
       }
     };
     fetchTourRequest();

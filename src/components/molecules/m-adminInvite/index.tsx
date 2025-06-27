@@ -26,10 +26,7 @@ const AdminInvite = ({ setAdminTab, companyName, companyId }: Props) => {
     // reset,
   } = useForm();
   const [, inviteStaff] = useFetchHook('authentication/invite-event-staffs');
-  console.log(errors);
-  console.log(companyId);
   const onSubmit = async (val: any) => {
-    console.log(val);
     const extractedEmails = Object.keys(val)
       .filter((key) => key.startsWith('email'))
       .map((key) => val[key])

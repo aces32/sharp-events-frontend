@@ -55,7 +55,7 @@ const ViewEventAddress = ({ address }: ViewEventAddressProps) => {
       </div>
 
       <div className="mt-5 h-[50dvh]">
-        <APIProvider apiKey="AIzaSyBWI4bfxL0x2CXiggGP1px6AUKi0x8g1c4">
+        <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY as string}>
           <Map
             defaultZoom={3}
             zoom={15}

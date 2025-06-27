@@ -38,7 +38,6 @@ const CreateVendorAccount = ({ setVendorTab, setEmail }: Props) => {
   useEffect(() => {
     const handleService = async () => {
       const response: { data: { id: string; name: string }[] } = await getService.Get();
-      console.log(response);
       const serviceData = response.data || [];
       if (serviceData.length) {
         const uniqueServicesMap = new Map(serviceData.map((item) => [item.name, item]));
@@ -67,7 +66,6 @@ const CreateVendorAccount = ({ setVendorTab, setEmail }: Props) => {
       nicheId: val.service,
       password: encryptedPassword,
     });
-    console.log(response);
     if (response?.code === '00') {
       setEmail(val.email);
 

@@ -48,6 +48,7 @@ Axios.interceptors.response.use(
   async (error) => {
     dispatch(setIsLoading({ isLoading: false }));
     Toast(error?.response?.data?.message, { type: 'error' });
+    return Promise.reject(error);
   },
 );
 
