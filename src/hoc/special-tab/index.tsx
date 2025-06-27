@@ -33,7 +33,6 @@ function SpecialMyTabs({
 }: MyTabsProps) {
   const childrenNode = Children.toArray(tabPanel);
   return (
-    // @ts-ignore
     <Tab.Group>
       <Tab.List className="space-x-5 space-y-4 text-center ">
         {tabList.map((item) => (

@@ -1,32 +1,22 @@
 /* eslint-disable prefer-destructuring */
 /* eslint-disable import/prefer-default-export */
-export const handleFormFile = (list: any, prop: any) =>
-  // @ts-ignore
-
+export const handleFormFile = <T extends Record<string, any>>(list: T[], prop: keyof T) =>
   list.map((item) => {
     const obj = { ...item };
-
-    if (!obj[prop]) {
-      obj[prop] = null;
+    const fileList = obj[prop] as File[] | undefined;
+    if (!fileList || fileList.length === 0) {
+      obj[prop] = null as unknown as T[keyof T];
       return obj;
     }
-    obj[prop] = obj[prop][0];
+    obj[prop] = fileList[0] as unknown as T[keyof T];
     return obj;
   });
 
-export function isFileInputEmpty(files: [File]): boolean {
-  // @ts-ignore
-
-  let valid = true;
-  if (files) {
-    // @ts-expect-error
-    const file = files[0] ?? files?.Files[0];
-    if (file) {
-      return valid;
-    }
-    valid = false;
+export function isFileInputEmpty(files?: File[]): boolean {
+  if (files && files.length > 0 && files[0]) {
+    return true;
   }
-  return valid;
+  return false;
 }
 
 export function checkIfFileIsTooBig(file?: File): boolean {
@@ -41,20 +31,12 @@ export function checkIfFileIsTooBig(file?: File): boolean {
   return valid;
 }
 
-export function checkIfImageIsCorrectType(files?: [File]): boolean {
-  let valid = true;
-  if (files) {
-    // @ts-ignore
-    const file = files[0] ?? files?.Files[0];
-    if (file) {
-      if (
-        !['image/jpeg', 'image/jpg', 'image/gif', 'image/png'].includes(file.type.toLowerCase())
-      ) {
-        valid = false;
-      }
-      return valid;
-    }
-    valid = false;
+export function checkIfImageIsCorrectType(files?: File[]): boolean {
+  if (files && files.length > 0) {
+    const file = files[0];
+    return ['image/jpeg', 'image/jpg', 'image/gif', 'image/png'].includes(
+      file.type.toLowerCase(),
+    );
   }
-  return valid;
+  return false;
 }
