@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+#carousel .swiper-pagination-bullet{
+  
+  background-color: #BCBBFF !important;
+  width: 23px !important;
+  height: 23px !important;
+  opacity: 1 !important;
+}
+#carousel .swiper-pagination-bullet-active{
+  width: 23px !important;
+  height: 23px !important;
+  background-color: #3F3BFE !important;
+}
+ .swiper-pagination{
+  bottom: 0px !important;
+}
+#line {
+  display: block; /* Ensure each line behaves separately */
+  overflow: hidden;
+  clip-path: inset(0 100% 0 0);
+  animation: typing 1.5s steps(20, end) forwards;
+}
+
+#line:nth-child(1) {
+  animation-delay: 0s;
+}
+#line:nth-child(2) {
+  animation-delay: 1.5s; /* Starts after first line */
+}
+#line:nth-child(3) {
+  animation-delay: 3s; /* Starts after second line */
+}
+
+@keyframes typing {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+#pattern0{
+  color:white;
+}
+
+.panel{
+  display: none;
+}
+.panel.active{
+  display: block;
+}
+
+.input-image[type="file"]{
+  display: none;
+}
+.quill {
+  background-color: #fff!important;
+  border-radius: 8px;
+  border: 1px rgb(209, 213, 219) solid !important;
+}
+.ql-toolbar{
+  border: none !important;
+}
+.ql-container{
+  border: none !important;
+  min-height: 10rem;
+}
+
+input[type="time"]:before {
+  content: 'Time   ';
+  white-space: pre-wrap;
+  color:  #717070;
+  position: absolute;
+  background-color: inherit;
+  font-weight: bold;
+ 
+  font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+
+input[type="time"]:hover:before {
+  content: '';
+}
+input[type="time"] {
+  position: relative;
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 16px;
+  background-position: calc(100% - 12px - 1px);
+  background-image: url("/src/assets/images/arrow-down.png");
+  
+  
+  
+  &::-webkit-datetime-edit-fields-wrapper {
+      padding: 0;
+    
+  }
+
+  
+  &::-webkit-calendar-picker-indicator {
+      position: absolute;
+      right: 0rem;
+      width: 4rem;
+      height: 4rem;
+      margin: 0;
+      padding: 0;
+      opacity: 1; 
+      cursor: pointer; 
+      background: transparent; 
+  }
+  
+
+
+ 
+}
+.fc .fc-toolbar.fc-header-toolbar {
+  justify-content: space-between;
+}
+.fc .fc-toolbar-chunk:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+.fc .fc-button.fc-prev-button,
+.fc .fc-button.fc-next-button {
+  background: white;
+  border: 1px solid #F5F6F7;
+  font-size: 1rem;
+  color: #C3CAD9;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.fc .fc-toolbar-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  color: #1D1D1D;
+}
+@media (max-width: 640px) {
+  .fc .fc-toolbar.fc-header-toolbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .fc .fc-toolbar-chunk:nth-child(2) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fc .fc-button.fc-prev-button,
+  .fc .fc-button.fc-next-button {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 1rem;
+  }
+}
+

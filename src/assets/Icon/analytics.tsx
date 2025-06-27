@@ -1,0 +1,24 @@
+export default function AnalyticsIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1.5 1.5V14.25C1.5 15.495 2.505 16.5 3.75 16.5H16.5"
+        stroke="currentcolor"
+        strokeOpacity="0.8"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3.75 12.75L7.1925 8.73001C7.7625 8.07001 8.775 8.025 9.39 8.6475L10.1025 9.36001C10.7175 9.97501 11.73 9.9375 12.3 9.2775L15.75 5.25"
+        stroke="currentcolor"
+        strokeOpacity="0.8"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

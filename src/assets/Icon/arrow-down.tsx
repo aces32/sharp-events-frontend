@@ -1,0 +1,12 @@
+const ArrowDown = () => {
+  return (
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10.4529 4.77173H6.81878H3.54628C2.98628 4.77173 2.70628 5.4484 3.10294 5.84506L6.12461 8.86673C6.60878 9.35089 7.39628 9.35089 7.88044 8.86673L9.02961 7.71756L10.9021 5.84506C11.2929 5.4484 11.0129 4.77173 10.4529 4.77173Z"
+        fill="currentcolor"
+        fillOpacity="0.8"
+      />
+    </svg>
+  );
+};
+export default ArrowDown;

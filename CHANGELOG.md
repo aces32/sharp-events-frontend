@@ -1,0 +1,109 @@
+- Logout implementation for Event Center User/Customer
+- integrated the api for approved tour
+- fix the booking modal
+- fix a typo error
+- implemented the tour request page
+- fixed font color design and responsiveness
+- fix some design in the user dashboard
+- redesign the account verification page
+- implemented the service offered page
+- implemented the service offered page
+- vendor event calender
+- know your customer page
+- implement Api for the tour request
+- implement the vendor message page, added nearBy event center and optimized the landing page
+- rating and review page
+- service page
+- service page
+- edit event page
+- design and implement API for event center
+- event details page
+- Added preview for the create event center video
+- integrated the API for create event center
+- vendor dashboard
+- vendor dashboard
+- implement the ui for the event owner dashboard
+- invited staff register page
+- implement the api for the authentication pages
+- implement the api for the authentication pages
+- Merge pull request #18 from sakajamiu/Dashbords
+- Implement UI for dashboard, ticket sales, wallet, service provider & event management
+- Merge pull request #17 from sakajamiu/book-now-page
+- implement the login page
+- book now page
+- Merge pull request #14 from sakajamiu/createAccountPage
+- Resolved merge conflicts between main and account branch
+- implement UI for create admin account
+- Merge pull request #16 from sakajamiu/feature/redux-persist
+- name the key
+- Merge pull request #15 from sakajamiu/feature/redux-persist
+- persist the redux state, exempt the loading state from persist, rewrite the loading redux,  and move storage of user from local storage to redux store
+- implement UI for create user account
+- Merge pull request #13 from sakajamiu/fix/remove-dayjs-ui-fixes
+- resolve conflict
+- move events rendering and create event to appropriate pages
+- remove dayjs and fixes some ui and improve map rendering
+- Merge pull request #12 from sakajamiu/integrate-api-for-forgetpassword
+- remove condition
+- remove condition
+- remove condition
+- implement yup for input validation
+- integrate api for forget and reset password
+- Merge pull request #10 from sakajamiu/search-event
+- resolve conflict
+- Merge pull request #11 from sakajamiu/feature/rewrite-v1
+-  rewrites
+- Added the min and max price input and fixed the pagination
+- added the input from the landing page to the search side bar and proper filter
+- added the input from the landing page to the search side bar and proper filter
+- implement filter features
+- search event page
+- Merge pull request #9 from sakajamiu/feature/even-details-rewrite
+- event details rewrite for the updated design
+- Merge pull request #8 from sakajamiu/fix/landing-page
+- fixes and imporvement of the landing page, creation of homewrapper to wrap all outside pages
+-  change node version
+- resolve build
+- Update index.tsx
+- Merge pull request #7 from sakajamiu/feature/responsive-page
+- add responsiveness to components
+- add new config data
+- update section styles
+- add new review card component
+- update landing section five component
+- update landing page components
+- add review card component
+- update component styles
+- create review landing page section
+- add landing section five
+- add new package
+- add landing page components
+- create landing sections
+- create new footer
+- add necessary imports for carousel
+- add new carousel
+- new landing page design v1
+- Merge pull request #5 from sakajamiu/feature/booking
+- booking
+- Merge pull request #4 from sakajamiu/feature/view-event
+- view-events
+- update validations
+- disable unused var lint
+- fix bug and clean logs
+- Merge branch 'main' of https://github.com/sakajamiu/sharp-event
+- update packages
+- update profilepage
+- set email in localstorage
+- update profilepageschema
+- add useInput hook
+- add profile-page route
+- Merge pull request #3 from sakajamiu/feature/nprmc
+- rename yarnrc
+- Merge pull request #2 from sakajamiu/feature/nprmc
+- add nprmc
+- Merge pull request #1 from sakajamiu/feature/create-event
+- create Events
+- committing to review
+-  login-authentication-init-event-creation
+- set-up
+-  first commit
